@@ -1,0 +1,22 @@
+{
+  "name": "@mlewando/table-cross",
+  "version": "0.0.1",
+  "description": "Handle table cross highlight",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "react",
+    "table",
+    "navigation",
+    "highlight",
+    "data-grid"
+  ],
+  "author": "Mateusz Lewandowski",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}

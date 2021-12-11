@@ -1,7 +1,9 @@
 module.exports = function (wallaby) {
     return {
       files: [
-        'src/**/*.mjs'
+        'package.json',
+        'src/**/*.mjs',
+        { pattern: 'src/**/*.spec.mjs', ignore: true }
       ],
   
       tests: [
@@ -9,6 +11,11 @@ module.exports = function (wallaby) {
       ],
   
       testFramework: 'mocha',
-      trace: true
+      trace: true,
+      env: {
+        type: 'node'
+      },
+  
+      workers: { restart: true }
     };
   };
